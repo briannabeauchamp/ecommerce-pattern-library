@@ -1,0 +1,25 @@
+.btn {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-neutral);
+  border-radius: 0;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  transition: 0.3s;
+}
+
+.btn-dark {
+  background-color: var(--color-primary);
+  border-color: var(--color-neutral);
+  color: var(--color-neutral);
+}
+
+.btn-dark:hover {
+  background-color: var(--color-neutral);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transition: 0.3s;
+}
