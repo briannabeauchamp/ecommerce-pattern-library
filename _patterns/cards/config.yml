@@ -1,0 +1,21 @@
+title: "Cards"
+description: |
+  The candle cards should be used on the home page and the products page to entice a viewer to click and learn more about the product. The banners are to only be used on the home page.
+
+patterns:
+  candle:
+    title: "Candle"
+    description: |
+      To be used on the home and products page.
+    width: "20em"
+    background: "#fff"
+  spring-banner:
+    title: "Spring Banner"
+    description: |
+      To be used at the top of the home page as the first banner.
+    background: "color-primary"
+  team-banner:
+    title: "Team Banner"
+    description: |
+      To be used at the bottom of the home page as the last banner.
+    background: "color-primary"

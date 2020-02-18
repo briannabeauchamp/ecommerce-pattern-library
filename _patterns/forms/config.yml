@@ -1,0 +1,53 @@
+title: "Forms"
+description: |
+  These form inputs should be used in situations where a form is required. Specifically it will be used in the checkout process of the website.
+
+patterns:
+  security-code:
+    title: "Security Code"
+    description: |
+      Used for the security code relating to the credit card in the "Payment Method" section.
+  phone-number:
+    title: "Phone Number"
+    description: |
+      To be used when specifically requesting a phone number.
+  email:
+    title: "Email"
+    description: |
+      To be used when specifically requesting an email in step 2 of the checkout process.
+  name-on-card:
+    title: "Name on Card"
+    description: |
+      To be used when asking user to input the name on the credit card they're using.
+  shipping:
+    title: "Shipping"
+    description: |
+      Used in the "Shipping Method" area in step 1 of the checkout process. This drop-down is to select the method for shipping.
+  address:
+    title: "Address"
+    description: |
+      To be used when specifically requesting an address. Two lines are given to ensure enough room to type it in.
+  province:
+    title: "Province"
+    description: |
+      To be used when specifically requesting the user's province.
+  city:
+    title: "City"
+    description: |
+      To be used when specifically requesting the user's city.
+  name:
+    title: "Name"
+    description: |
+      To be used when specifically requesting the users name. Two fields given to split up the users first and last name.
+  postal-code:
+    title: "Postal Code"
+    description: |
+      To be used when specifically requesting the users postal code.
+  expiration-date:
+    title: "Expiration Date"
+    description: |
+      To be used when erquesting the user's expiration date on the credit card they are using to checkout.
+  card-number:
+    title: "Card Number"
+    description: |
+      To be used when requesting the user's card number on the credit card they are using to checkout.

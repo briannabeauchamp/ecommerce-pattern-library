@@ -1,0 +1,10 @@
+title: "Page Navigation"
+description: |
+  The page navigation should be used at the bottom of the products page. To avoid having a very long page, multiple pages will be used.
+
+patterns:
+  products-navigation:
+    title: "Products Navigation"
+    description: |
+      To be used at the bottom of the products page to denote multiple pages.
+    width: "20em"

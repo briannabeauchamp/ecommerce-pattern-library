@@ -1,0 +1,11 @@
+.block {
+  display: block;
+}
+
+select, input {
+  border-color: var(--color-secondary);
+}
+
+.form-header {
+  font-weight: 500;
+}
