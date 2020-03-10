@@ -10,6 +10,13 @@ patterns:
     width: "20em"
     background: "#fff"
   spring-banner:
+    fields:
+      - name: heading
+        type: string
+        example: "Looking forward to spring? So are we!"
+      - name: text
+        type: string
+        example: "Shop our collection today to find what's right for you in time for the new season!"
     title: "Spring Banner"
     description: |
       To be used at the top of the home page as the first banner.

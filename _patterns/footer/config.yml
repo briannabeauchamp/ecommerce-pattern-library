@@ -1,0 +1,10 @@
+title: "Footer"
+description: |
+  The footer should be used at the bottom of every page. It includes the social media icons, a link back to the home page, as well as the copyright notice.
+
+patterns:
+  footer:
+    title: "Footer"
+    description: |
+        The footer should be used at the bottom of every page. It includes the social media icons, a link back to the home page, as well as the copyright notice.
+    width: "60em"

@@ -1,0 +1,10 @@
+title: "Header"
+description: |
+  The header should be used at the top of every page. It is the main navigation/header of the website.
+
+patterns:
+  header:
+    title: "Header"
+    description: |
+      To be used at the top of every page. It is the main navigation/header.
+    width: "60em"

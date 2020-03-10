@@ -1,0 +1,10 @@
+<nav class="relative text-center">
+    <ul class="main-nav list-group">
+      <li class="island logo"><a href="/"><img src="/images/logo.svg" alt="let's get lit logo"></a></li>
+      <li class="island-1-4 {% if page.highlight_nav == 'products' %}current{% endif %}">{% pattern buttons/dark url="/products/" text="All Candles" %}</li>
+      <li class="island-1-4 {% if page.highlight_nav == '#' %}current{% endif %}">{% pattern buttons/dark text="Limited Edition" %}</li>
+      <li class="island-1-4 {% if page.highlight_nav == '#' %}current{% endif %}">{% pattern buttons/dark text="Accessories" %}</li>
+      <li class="island-1-4 {% if page.highlight_nav == '#' %}current{% endif %}">{% pattern buttons/dark text="About Us" %}</li>
+    </ul>
+    <a class="right-center pin-rt" href="#"><i class="icon i-48"><svg><use xlink:href="/images/icons.svg#shopping-cart"></use></svg></i></a>
+</nav>

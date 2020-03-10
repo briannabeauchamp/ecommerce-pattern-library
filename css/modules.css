@@ -1,7 +1,7 @@
 /*
  * Modulifier || Code released under the UNLICENSE
  * Code under other copyrights & licenses listed below.
- * https://modulifier.web-dev.tools/#responsive;images;list-group;embed;media-object;positioning;forms;buttons;accessibility
+ * https://modulifier.web-dev.tools/#responsive;images;list-group;embed;media-object;icons;hidden;positioning;nice-lists;forms;buttons;accessibility;print
  */
 
 @-moz-viewport { width: device-width; scale: 1; }
@@ -228,6 +228,142 @@ svg.img-flex {
 .media-body, .media__body {
   overflow: hidden;
   min-width: 12em; /* Slightly less than 200px, responsiveness built in */
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+  background: transparent none no-repeat center center;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.i-16, .i--16 {
+  height: 16px;
+  width: 16px;
+}
+
+.i-18, .i--18 {
+  height: 18px;
+  width: 18px;
+}
+
+.i-20, .i--20 {
+  height: 20px;
+  width: 20px;
+}
+
+.i-24, .i--24 {
+  height: 24px;
+  width: 24px;
+}
+
+.i-32, .i--32 {
+  height: 32px;
+  width: 32px;
+}
+
+.i-48, .i--48 {
+  height: 48px;
+  width: 48px;
+}
+
+.i-64, .i--64 {
+  height: 64px;
+  width: 64px;
+}
+
+.i-96, .i--96 {
+  height: 96px;
+  width: 96px;
+}
+
+.i-128, .i--128 {
+  height: 128px;
+  width: 128px;
+}
+
+.i-192, .i--192 {
+  height: 192px;
+  width: 192px;
+}
+
+.i-256, .i--256 {
+  height: 256px;
+  width: 256px;
+}
+
+.icon img,
+.icon svg {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  fill: currentColor;
+}
+
+.icon-label {
+  vertical-align: middle;
+}
+
+.icon-link,
+.icon-link:focus,
+.icon-link:hover {
+  text-decoration: none;
+}
+
+[hidden], .hidden {
+  /* stylelint-disable declaration-no-important */
+  display: none !important;
+  visibility: hidden !important;
+  /* stylelint-enable */
+}
+
+.visually-hidden {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  clip: auto;
+  clip-path: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.chop,
+.crop {
+  overflow: hidden;
+}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scrollable {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .flex-row {
@@ -503,6 +639,38 @@ svg.img-flex {
 .height-win-full, .h-w-1 {
   height: 100vh;
   max-height: 46em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li::before {
+  content: "·";
+  float: left;
+  margin-left: -1.6em;
+  width: 1.3em;
+  text-align: right;
+}
+
+ol {
+  counter-reset: ol-simple-numbers;
+  list-style-type: none;
+}
+
+ol > li::before {
+  float: left;
+  margin-left: -1.6em;
+  width: 1.3em;
+  counter-increment: ol-simple-numbers;
+  content: counter(ol-simple-numbers);
+  text-align: right;
+}
+
+.list-group > li::before,
+.list-group-inline > li::before,
+.list-group--inline > li::before {
+  content: none;
 }
 
 /* stylelint-disable no-descending-specificity */
@@ -999,4 +1167,153 @@ a:focus, [tabindex="0"]:focus {
 
 [aria-disabled] {
   cursor: default;
+}
+
+.print-only {
+  display: none;
+  visibility: hidden;
+}
+
+.page-break-before {
+  page-break-before: always;
+}
+
+.page-break-after {
+  page-break-after: always;
+}
+
+.no-page-break-inside {
+  page-break-inside: avoid;
+}
+
+@media print {
+
+  /* stylelint-disable declaration-no-important */
+
+  .no-print {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .print-only,
+  .force-print {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* stylelint-enable */
+
+  .visually-hidden.force-print {
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: static;
+    width: auto;
+    border: 0;
+    clip: initial;
+    clip-path: none;
+  }
+
+  /*
+   * (c) Fabien Sa || MIT License
+   *     http://bafs.github.io/Gutenberg/
+   */
+
+  table,
+  blockquote,
+  pre,
+  code,
+  figure,
+  li,
+  hr,
+  ul,
+  ol,
+  a,
+  tr {
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1 + p,
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    page-break-before: avoid;
+  }
+
+  img {
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: avoid;
+  }
+
+  /* stylelint-disable declaration-no-important */
+
+  pre {
+    white-space: pre-wrap !important;
+    word-wrap: break-word;
+  }
+
+  /* stylelint-enable */
+
+  /* End Gutenberg code */
+
+  /*
+   * (c) HTML5 Boilerplate || MIT License
+   *     https://html5boilerplate.com/
+   */
+
+  /* stylelint-disable declaration-no-important */
+
+  *, *::before, *::after, *::first-letter, *::first-line {
+    background: none transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* stylelint-enable */
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after,
+  a.no-print-href::after,
+  a.href-no-print::after {
+    content: "";
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  /* End HTML5 Boilerplate code */
+
 }

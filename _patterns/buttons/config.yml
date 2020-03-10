@@ -4,6 +4,15 @@ description: |
 
 patterns:
   basic:
+    fields:
+      - name: text
+        type: string
+        example: "View"
+        required: false
+      - name: url
+        type: url
+        example: /products/
+        required: false
     title: "Basic"
     description: |
       Default to using the basic button. It should always be used in front of light backgrounds.

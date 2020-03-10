@@ -1,6 +1,9 @@
 <div class="card">
-  <img class="img-flex" <source src="/images/banner-spring.jpg" alt"">
-  <h3>Looking forward to spring? So are we!</h3>
-  <p>Shop our collection today to find what's right for you in time for the new season!</p>
+  <img class="img-flex" <source src="/images/banner-spring.jpg{{include.image}}" alt"">
+  <h3>{{include.heading}}</h3>
+  <p>{{include.text}}</p>
+  {% if include.button_url %}
+    {% pattern buttons/basic url=include.button_url text=include.button_text %}
+  {% endif %}
   {% pattern buttons/basic %}
 </div>

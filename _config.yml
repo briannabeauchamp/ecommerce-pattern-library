@@ -3,6 +3,9 @@ theme: jekyll_patternbot
 
 patternbot:
   title: "Let's Get Lit"
+  layouts:
+    default: |
+      The default layout should be used for almost every page, it includes the website's primary header and footer.
   description: |
     A website selling home-made candles as well as accessories for candles.
   font_url: "https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap"
@@ -22,3 +25,6 @@ patternbot:
       The accent colour is a light shade of pink. It is used in the background for headers and text areas of cards. It is not used in the background for the text on the product page.
     colors.neutral: |
       The neutral colour is white. It is used as the background of the website and in the type in the buttons, footer, and header.
+collections:
+  products:
+    output: true
