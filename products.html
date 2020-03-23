@@ -4,3 +4,7 @@ highlight_nav: products
 ---
 
 {% pattern cards/spring-banner heading="Looking forward to summer? So are we!" text="Shop our collection today to find what's right for you in time for the new season!" %}
+
+{% for product in site.products %}
+  {% pattern cards/product-card data=product %}
+{% endfor %}
