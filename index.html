@@ -2,4 +2,14 @@
 layout: default
 ---
 
-{% pattern cards/spring-banner button_text="View" button_url="/products/" heading="Looking forward to spring? So are we!" text="Shop our collection today to find what's right for you in time for the new season!" %}
+<div class="gutter">
+  {% pattern cards/spring-banner heading="Looking forward to spring? So are we!" text="Shop our collection today to find what's right for you in time for the new season!" button_text="View" button_url="/products/" %}
+</div>
+<div class="gutter grid">
+  <div class="unit xs-1 s-1 m-1-3 l-1-3">{% pattern cards/candle %}</div>
+  <div class="unit xs-1 s-1 m-1-3 l-1-3">{% pattern cards/candle %}</div>
+  <div class="unit xs-1 s-1 m-1-3 l-1-3">{% pattern cards/candle %}</div>
+</div>
+<div class="gutter">
+  {% pattern cards/team-banner button_text="View" button_url="/products/" %}
+</div>
