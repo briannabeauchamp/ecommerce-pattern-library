@@ -1,6 +1,6 @@
 title: "Cards"
 description: |
-  The candle cards should be used on the home page and the products page to entice a viewer to click and learn more about the product. The banners are to only be used on the home page.
+  The candle cards and product cards should be used on the home page and the products page to entice a viewer to click and learn more about the product. The banners are to only be used on the home page.
 
 patterns:
   candle:
@@ -26,3 +26,9 @@ patterns:
     description: |
       To be used at the bottom of the home page as the last banner.
     background: "color-primary"
+  product-card:
+    title: "Product Card"
+    description: |
+      To be used on the home and products list page when using a card for a candle. There's a placeholder for an image above the pink area.
+    width: "20em"
+    background: "#fff"
