@@ -1,4 +1,4 @@
-#Let's Get Lit e-commerce pattern
+# Let's Get Lit e-commerce pattern
 
 To create a pattern library for a made up company called Let's Get Lit.
 
