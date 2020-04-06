@@ -1,3 +1,11 @@
+#Let's Get Lit e-commerce pattern
+
+To create a pattern library for a made up company called Let's Get Lit.
+
+Let's Get Lit is a company that sells hand made candles in a variety of scents as well as candle accessories. The website aesthetic is very feminine, using a light pink and purple as the main colours as well as black to create a more modern look. The logo is simply a word mark to stay within the clean modern look of the website.
+
+---
+
 ## Installation
 
 The pattern library is a Jekyll & Patternbot based application, so it requires Ruby to be installed.
