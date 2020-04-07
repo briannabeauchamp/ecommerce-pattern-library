@@ -6,6 +6,18 @@ Let's Get Lit is a company that sells hand made candles in a variety of scents a
 
 ---
 
+## Netlify Link
+
+https://lucid-wilson-3d231b.netlify.com/pattern-library/#brand
+
+---
+
+## UX Link
+
+https://docs.google.com/document/d/1ooBetjQG92LNBEpAuJx_OnGv3Qt2oGKuHS9eD7kJ-6E/edit?usp=sharing
+
+---
+
 ## Installation
 
 The pattern library is a Jekyll & Patternbot based application, so it requires Ruby to be installed.
